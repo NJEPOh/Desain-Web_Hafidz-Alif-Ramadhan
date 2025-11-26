@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Hyperlink HTML</title>
+</head>
+<body bgcolor="#f9f9f9" text="#333333">
+
+    <h1 align="center">Contoh Penggunaan Hyperlink (&lt;a&gt;)</h1>
+
+    <h2>1. Atribut <code>href</code></h2>
+    <ul>
+        <li><a href="http://example.com">Link ke WWW Server</a></li>
+        <li><a href="ftp://ftp.example.com">Link ke FTP Server</a></li>
+        <li><a href="gopher://example.com">Link ke Gopher Server</a></li>
+        <li><a href="mailto:email@example.com">Link ke Email</a></li>
+        <li><a href="news:comp.lang.java">Link ke Newsgroup</a></li>
+        <li><a href="#bagian1">Link ke bagian tertentu dalam halaman (anchor)</a></li>
+    </ul>
+
+    <h2>2. Atribut <code>target</code></h2>
+    <ul>
+        <li><a href="http://example.com" target="_self">Buka di window yang sama (_self)</a></li>
+        <li><a href="http://example.com" target="_parent">Buka di window induk (_parent)</a></li>
+        <li><a href="http://example.com" target="_top">Buka mengganti seluruh isi window (_top)</a></li>
+        <li><a href="http://example.com" target="_blank">Buka di tab/window baru (_blank)</a></li>
+    </ul>
+
+    <h2>3. Atribut <code>name</code></h2>
+    <p>Scroll ke bawah untuk menemukan bagian anchor 👇</p>
+
+    <!-- Anchor tujuan -->
+    <a name="bagian1"></a>
+    <h3>Ini adalah Bagian 1 (Anchor Tujuan)</h3>
+    <p>Paragraf ini adalah target dari link internal dengan <code>href="#bagian1"</code>.</p>
+    <p><a href="#top">Kembali ke atas</a></p>
+
+</body>
+</html>

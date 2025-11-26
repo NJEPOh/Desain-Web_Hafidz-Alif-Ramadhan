@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion via CDN</title>
+
+    <!-- jQuery UI CSS dari CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- jQuery utama -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <div id="Accordion">
+        <h3>Accordion 1</h3>
+        <div>
+            <p>Isi accordion pertama.</p>
+        </div>
+
+        <h3>Accordion 2</h3>
+        <div>
+            <p>Isi accordion kedua.</p>
+        </div>
+
+        <h3>Accordion 3</h3>
+        <div>
+            <p>Isi accordion ketiga.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#Accordion").accordion();
+        });
+    </script>
+
+</body>
+
+</html>

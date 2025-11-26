@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e1e1e1;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 6px 24px;
+    text-align: left;
+    color: white;
+    letter-spacing: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.menu {
+    background: #333;
+    padding: 10px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #ffd700;
+}
+
+.video-container {
+    position: relative;
+    top: 0;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-height: 90vh;
+    display: block;
+    border: none;
+    background: black;
+}
+
+.content {
+    padding: 24px;
+    text-align: justify;
+    font-size: 20px;
+    background: #fff;
+}

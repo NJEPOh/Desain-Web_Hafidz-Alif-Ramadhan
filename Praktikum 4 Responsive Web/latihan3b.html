@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan 3b</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f0f0f0;
+        }
+
+        .objek {
+            width: 200px;
+            height: 200px;
+            background: red;
+            border-radius: 0;
+            transition: all 1s ease;
+        }
+
+        @media screen and (orientation: landscape) {
+            .objek {
+                background: blue;
+                border-radius: 50%;
+                animation: muter 2s linear infinite;
+            }
+
+            @keyframes muter {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="objek"></div>
+</body>
+
+</html>

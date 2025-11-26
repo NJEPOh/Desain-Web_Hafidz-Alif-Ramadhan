@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autocomplete jQuery (via CDN)</title>
+
+    <!-- jQuery UI CSS dari CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- jQuery utama dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI dari CDN -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <label for="tags">Pilih Tag:</label>
+    <input type="text" name="tag" id="tags">
+
+    <script>
+        // Daftar kata yang akan digunakan untuk autocomplete
+        var tags = [
+            "AngularJS", "ReactJS", "VueJS", "NodeJS", "TypeScript", "Ionic", "jQuery"
+        ];
+
+        // Aktifkan fitur autocomplete
+        $(function () {
+            $("#tags").autocomplete({
+                source: tags
+            });
+        });
+    </script>
+</body>
+
+</html>

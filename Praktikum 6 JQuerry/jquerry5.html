@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog jQuery UI (via CDN)</title>
+
+    <!-- jQuery UI CSS dari CDN -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- jQuery utama dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI dari CDN -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <button id="bukaDialog">Klik Saya!</button>
+
+    <!-- Elemen dialog -->
+    <div id="dialog" title="Hello World">
+        Halo, Salam kenal!
+    </div>
+
+    <script>
+        // Jalankan kode saat dokumen siap
+        $(function () {
+            // Inisialisasi dialog, tapi jangan langsung dibuka
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true, // agar background sedikit gelap saat dialog terbuka
+                show: { effect: "fade", duration: 300 },
+                hide: { effect: "fade", duration: 300 }
+            });
+
+            // Tombol untuk membuka dialog
+            $("#bukaDialog").click(function () {
+                $("#dialog").dialog("open");
+            });
+        });
+    </script>
+</body>
+
+</html>
